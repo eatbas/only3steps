@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  article_id: 
+  color_palette: MyString
+  body: MyText
+
+two:
+  article_id: 
+  color_palette: MyString
+  body: MyText

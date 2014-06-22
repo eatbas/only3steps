@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Article:</strong>
+  <%= @step.article %>
+</p>
+
+<p>
+  <strong>Color palette:</strong>
+  <%= @step.color_palette %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @step.body %>
+</p>
+
+<%= link_to 'Edit', edit_step_path(@step) %> |
+<%= link_to 'Back', steps_path %>
