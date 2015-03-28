@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   def new
     @article = Article.new
+    3.times { @article.steps.build }
   end
 
   # GET /articles/1/edit
@@ -69,6 +70,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:path, :title)
+      params.require(:article).permit(:path, :title, steps_attributes: :body)
     end
 end

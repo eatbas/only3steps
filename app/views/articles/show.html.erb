@@ -1,14 +1,10 @@
-<p id="notice"><%= notice %></p>
+<div class="main">
+  <section><%= @article.title %></section>
+  <% @article.steps.each do |step| %>
+    <section><%= step.body %></section>
+  <% end %>
+</div>
 
-<p>
-  <strong>Path:</strong>
-  <%= @article.path %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<script>
+  $(".main").onepage_scroll();
+</script>
